@@ -6,19 +6,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>car_acc</name>
  <properties>
-    
-    <maven.compiler.source>7</maven.compiler.source>
-    <maven.compiler.target>7</maven.compiler.target>
- 
+
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>1eh-jood</sonar.organ7</maven.compiler.target>
+       
    <sonar.organization>software-ibtihaj-nada</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
+	<sonar.coverage.exclusions>*/Main.java,*/Admin.java</sonar.coverage.exclusions>
+   </properties>
 
 <build>
 <plugins> 
-
-
-	  <plugin> 
+ <plugin> 
 		<groupId>org.jacoco</groupId>
 	  <artifactId>jacoco-maven-plugin</artifactId>
 		<executions>
@@ -39,59 +38,51 @@
 </plugin>
 </plugins> 
 </build>
-  
-  <dependencies>
-  
-  <dependency> 
-					<groupId>org.jacoco</groupId>
-					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>0.8.6</version>
-				</dependency>
- 
-<dependency>
-    <groupId>com.sun.mail</groupId>
-    <artifactId>javax.mail</artifactId>
-    <version>1.6.2</version>
-</dependency>
 
 
-  
 
-  
-  <dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-picocontainer</artifactId>
-    <version>7.3.4</version>
-    <scope>test</scope>
-</dependency>
+    <dependencies>
+		
+		<dependency> 
+       <groupId>org.jacoco</groupId>
+       <artifactId>jacoco-maven-plugin</artifactId>
+       <version>0.8.6</version>
+       </dependency>
+		
+		
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.3.4</version>
+        </dependency>
 
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>7.3.4</version>
-</dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>7.3.4</version>
+        </dependency>
 
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-core</artifactId>
-    <version>7.3.4</version>
-</dependency>
-  
-  <dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-junit</artifactId>
-    <version>7.3.4</version>
-    <scope>test</scope>
-</dependency>
-  
-  </dependencies>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>7.3.4</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.3.4</version>
+            <scope>test</scope>
+        </dependency>
 
-  
-  
-  
-  
-  
-  
-  
-</project>
+        <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>1.6.2</version>
+       </dependency>
+       
+    </dependencies>
+    
+    
+  </project>
