@@ -9,14 +9,12 @@
   
     <maven.compiler.source>7</maven.compiler.source>
     <maven.compiler.target>7</maven.compiler.target>
-
-  <sonar.organization>software-ibtihaj-nada</sonar.organization>
+   <sonar.organization>software-ibtihaj-nada</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-
-    <sonar.coverage.exclusions>**/Main.java</sonar.coverage.exclusions>
 	  <sonar.coverage.exclusions>**/Customer.java</sonar.coverage.exclusions>
-    <sonar.coverage.exclusions>**/Product.java</sonar.coverage.exclusions>
-
+	   <sonar.coverage.exclusions>**/Admin.java</sonar.coverage.exclusions>
+	   <sonar.coverage.exclusions>**/Login.java</sonar.coverage.exclusions>
+	   <sonar.coverage.exclusions>**/Installer.java</sonar.coverage.exclusions>
 </properties>
 
 <build>
@@ -39,11 +37,7 @@
 				
 			</execution>
 	</executions>
-	<configuration>
-                <excludes>
-                    <exclude>**/Login.java</exclude>
-                </excludes>
-            </configuration>
+	  
 </plugin>
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
